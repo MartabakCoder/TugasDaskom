@@ -1,0 +1,20 @@
+div{
+    background-color: red;
+    width: 300px;
+    padding: 25px;
+    border: 25px solid grey;
+    margin: 25px;
+}
+.pc{
+    border-style: dotted;
+    text-align: center;
+    background-color: deeppink;
+
+}
+#pid{
+    border-style: dotted dashed solid blue;
+    color: grey;
+}
+h2,p{
+    text-align: center;
+}
