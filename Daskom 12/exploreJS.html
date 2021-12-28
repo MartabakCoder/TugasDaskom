@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Javascript</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap');
+        body{
+            background-color: #4caf50;
+            font-family: 'Lato', sans-serif;
+        }
+        .data{
+            padding: 1em;
+            margin: 2em auto;
+            width: 17em;
+            background-color: #ffffff;
+            border-radius: 3px;
+        }
+        label{
+            font-size: 10px;
+            color: #555555;
+        }
+        input[type="text"],textarea{
+            padding: 8px;
+            width: 95%;
+            background: #efefef;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+        .title{
+            color: #ffffff;
+            font-size: 36px;
+        }
+        .title2{
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .button{
+            background: #4caf50;
+            color: #ffffff;
+            border: 0;
+            padding: 5px 8px;
+        }
+        .jam_digital{
+            overflow: hidden;
+            width: 330px;
+            margin: 20px auto;
+            border: 5px solid #2F4B13;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .cube{
+            float: left;
+            width: 110px;
+            height: 100px;
+        }
+        .jam_digital p{
+            color: black;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2 class="title">Form Validasi Javascript</h2>
+    </center>
+    <div class="data">
+        <form onsubmit="validasi()">
+            <div>
+                <label for="namaLengkap">Nama Lengkap</label>
+                <input type="text" name="namaLengkap" id="namaLengkap">
+            </div>
+            <div>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="40" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="button">
+            </div>
+        </form>
+    </div>
+    <h2 align="center" class="title">Tanggal dan Jam Digital</h2>
+    <h3 align="center" id="tanggal" class="title2"></h3>
+    <div class="jam_digital">
+        <div class="cube">
+            <p id="jam"></p>
+        </div>
+        <div class="cube">
+            <p id="menit"></p>
+        </div>
+        <div class="cube">
+            <p id="detik"></p>
+        </div>
+    </div>
+    <script>
+        function validasi() {
+            var nama = document.getElementById("namaLengkap").value
+            var alamat = document.getElementById("alamat").value
+            var validationArray= []
+            validationArray.length=0
+            var validation = true;
+            if(nama == null|| nama ==""){
+                validation = false
+                validationArray.push("nama anda harus terisi");
+            }
+            if(alamat == ""||alamat == null){
+                validation = false
+                validationArray.push("alamat anda harus terisi");
+            }
+            if(validation){
+                alert("Data Anda Lengkap")
+            }else{
+                var txt = '';
+                validationArray.forEach((item)=>{
+                    if(item != undefined){
+                        txt+= item+"\n" 
+                    }
+                });
+                alert(txt);
+            }
+        }
+        var tgl = new Date()
+        document.getElementById("tanggal").innerHTML = "Waktu akses "+tgl
+        window.setTimeout("waktu()",1000)
+        function waktu(){
+            var waktu = new Date()
+            setTimeout("waktu()",1000)
+            document.getElementById("jam").innerHTML= waktu.getHours()
+            document.getElementById("menit").innerHTML= waktu.getMinutes()
+            document.getElementById("detik").innerHTML= waktu.getSeconds()
+        }
+        var i=0
+        setInterval(() => {
+            var classJamDigital = document.getElementsByClassName("jam_digital")
+            var color = ["#FBFCFB", "#E5F3D7","#E2FCC8"]
+            classJamDigital[0].style.backgroundColor = color[i]
+            i = (i+1)%color.length
+        }, 1000);
+    </script>
+</body>
+</html>

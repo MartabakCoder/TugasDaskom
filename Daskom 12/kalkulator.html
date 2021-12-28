@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap');
+        body{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+        .form{    
+            margin: 2em auto;
+            width: 30%;
+        }
+        label{
+            font-size: 20px;
+        }
+        input[type="number"]{
+            padding: 8px;
+            width: 97%;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+        .form-title{
+            border-radius: 3px;
+            padding: 2em;
+            background-color: #446F19;
+            color: #ffffff;
+        }
+        .form-buttom{
+            border-radius: 3px;
+            padding: 2em;
+            background-color: #446F19;
+            color: #ffffff;
+        }
+        .form-content{
+            padding: 2em;
+            background-color: #F3FAEC;
+        }
+        .tombol{
+            border-radius: 3px;
+            background: #446F19;
+            color: #ffffff;
+            border: 0;
+            padding: 15px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="form-title">
+            <h2>Kalkulator</h2>
+        </div>
+        <div class="form-content">
+            <form action="" name="kalkulator">
+                <div>
+                    <label for="nilaiA">Nilai 1:</label>
+                    <input type="number" name="nilaiA" id="nilaiA">
+                </div>
+                <div>
+                    <label for="nilaiB">Nilai 2:</label>
+                    <input type="number" name="nilaiB" id="nilaiB ">
+                </div>
+                <br>
+                <div align="right">
+                    <button type="button" class="tombol" onclick="fKalkulator('+')">+</button>
+                    <button type="button" class="tombol" onclick="fKalkulator('-')">-</button>
+                    <button type="button" class="tombol" onclick="fKalkulator('x')">x</button>
+                    <button type="button" class="tombol" onclick="fKalkulator('/')">/</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-buttom">
+            <label for="hasil">Hasil</label>
+            <br>
+            <label id="hasil"></label>
+        </div>
+    </div>
+    
+    <script>
+        var fKalkulator= (opt)=>{
+            var a = document.forms['kalkulator']['nilaiA'].value
+            var b = document.forms['kalkulator']['nilaiB'].value
+            console.log(decision(opt,a,b))
+            document.getElementById("hasil").innerHTML = decision(opt,a,b)
+        }
+        function decision(txt,a,b){
+            if(txt=="+"){
+                hasil = Number(a)+Number(b)
+            }else if(txt=="-"){
+                hasil = Number(a)-Number(b)
+            }else if (txt=="x") {
+                hasil = Number(a)*Number(b)
+            }else if(txt=="/"){
+                hasil = Number(a)/Number(b)
+            }
+            return hasil
+        }
+    </script>
+</body>
+</html>
