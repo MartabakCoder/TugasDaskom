@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="relative bg-white mb-10">
+        <!-- Tampilan Web -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6" id="top">
+          <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="index.html">
+                <img class="h-8 w-auto sm:h-10" src="src/img/logo.png" alt="">
+              </a>
+              <span class="p-3 text-xl font-medium text-gray-800">Dinus Student Blog</span>
+            </div>
+            <nav class="hidden md:flex space-x-10">
+              <div class="relative">
+                <a href="index.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Beranda
+                </a>
+                <a href="profil.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Profil
+                </a>
+                <a href="artikel.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Artikel
+                </a>
+                <a href="buku_tamu.html" class="p-5 text-base font-medium text-blue-600 hover:text-blue-900">
+                    Buku Tamu
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- End Tampilan Web -->
+
+        <!-- Tampilan Mobile -->
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div class="pt-5 pb-6 px-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <img class="h-8 w-auto" src="src/img/logo.png" alt="Dinus Student Blog">
+                </div>
+              </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+              <div class="grid grid-cols-1 gap-y-4 gap-x-8">
+                <a href="index.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Beranda
+                </a>
+      
+                <a href="profil.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Profil
+                </a>
+      
+                <a href="artikel.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Artikel
+                </a>
+      
+                <a href="buku_tamu.html" class="w-full flex px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                  Buku Tamu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tampilan Mobile -->
+        <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(src/img/header.jpg);"></div>
+      </div>
+      <!-- End header -->
+     <!-- Content -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <h1 class="text-2xl font-bold mb-4">Form buku Tamu</h1>
+        <form>
+            <label class="block my-5">
+              <span class="block text-sm font-medium text-gray-700">Nama Lengkap</span>
+              <input type="text" placeholder="Ex: Rajendra Nohan" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"/>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Jenis Kelamin</span>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="radio" class="form-radio h-5 w-5 text-blue-600" checked name="jeniskelamin"><span class="ml-2 text-gray-700">Laki-laki</span>
+                </label>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="radio" class="form-radio h-5 w-5 text-blue-600" name="jeniskelamin"><span class="ml-2 text-gray-700">Perempuan</span>
+                </label>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Alamat Tinggal</span>
+                <input type="text" placeholder="Ex: Jalan Karangrejo Selatan" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"/>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Email</span>
+                <input type="email" placeholder="Ex: rajendranohan4@gmail.com" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"/>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Aktif pada sosial media :</span>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600"><span class="ml-2 text-gray-700">Facebook</span>
+                </label>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 ><span class="ml-2 text-gray-700">Twitter</span>
+                </label>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 ><span class="ml-2 text-gray-700">Instagram</span>
+                </label>
+                <label class="inline-flex items-center mt-3 mx-3">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 ><span class="ml-2 text-gray-700">Path</span>
+                </label>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Mengetahui web ini dari :</span>
+                <select name="" id="" class="form-select mt-1 block w-32 px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm">
+                    <option value="">-= Pilih =-</option>
+                    <option value="">Whatsapp</option>
+                    <option value="">Teman</option>
+                    <option value="">Grup Facebook</option>
+                    <option value="">Instagram</option>
+                </select>
+            </label>
+            <label class="block my-5">
+                <span class="block text-sm font-medium text-gray-700">Pesan :</span>
+                <textarea name="pesan" id="pesan" cols="30" rows="10" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"></textarea>
+            </label>
+            <button type="submit" class="p-2 pl-5 pr-5 bg-blue-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300">Kirim</button>
+            <button type="reset" class="p-2 pl-5 pr-5 bg-yellow-500 text-gray-100 text-lg rounded-lg focus:border-4 border-yellow-300">Reset</button>
+        </form>
+      </div>
+    <!-- End Content -->
+    <!-- footer -->
+        <footer class="flex flex-wrap items-center p-5 mt-10 border-t-2 border-blue-400">
+            <div class="w-full grid grid-cols-12 gap-5">
+                <div class="col-span-10">
+                    <p class="text-md text-gray-800 text-center font-bold">
+                    Copyright © 2021 Mahasiswa Matrikulasi
+                    </p>
+                </div>
+                <div class="col-span-2">
+                    <a href="#top" class="text-xl text-blue-700">
+                    Ke atas
+                    </p>
+                </div>
+            </div>
+                
+        </footer>
+    <!-- end footer -->
+</div>
+</body>
+</html>

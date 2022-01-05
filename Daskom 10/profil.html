@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- header -->
+  <div class="relative bg-white mb-10">
+    <!-- Tampilan Web -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6" id="top">
+      <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="index.html">
+            <img class="h-8 w-auto sm:h-10" src="src/img/logo.png" alt="">
+          </a>
+          <span class="p-3 text-xl font-medium text-gray-800">Dinus Student Blog</span>
+        </div>
+        <nav class="hidden md:flex space-x-10">
+          <div class="relative">
+            <a href="index.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                Beranda
+            </a>
+            <a href="profil.html" class="p-5 text-base font-medium text-blue-600 hover:text-blue-900">
+                Profil
+            </a>
+            <a href="artikel.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                Artikel
+            </a>
+            <a href="buku_tamu.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                Buku Tamu
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End Tampilan Web -->
+
+    <!-- Tampilan Mobile -->
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <div class="pt-5 pb-6 px-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="src/img/logo.png" alt="Dinus Student Blog">
+            </div>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div class="grid grid-cols-1 gap-y-4 gap-x-8">
+            <a href="index.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+              Beranda
+            </a>
+  
+            <a href="profil.html" class="w-full flex px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+              Profil
+            </a>
+  
+            <a href="artikel.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+              Artikel
+            </a>
+  
+            <a href="buku_tamu.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+              Buku Tamu
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Tampilan Mobile -->
+    <!-- Header Image -->
+    <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(src/img/header.jpg);"></div>
+    <!-- End Header Image -->
+  </div>
+  <!-- End header -->
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="w-full">
+        <div class="w-full bg-blue-400 h-48 rounded-t-lg"></div>
+        <div class="absolute -mt-20 ml-5">
+            <img class="ite inline-block h-28 w-28 rounded-full ring-2 ring-white" src="src/img/profile.png" alt="">
+        </div>
+    </div>
+    <div class="bg-primary border border-primary rounded-b-lg p-5 pt-20 flex flex-col">
+        <p class="text-xl font-bold block uppercase tracking-wide text-gray-600">Rajendra Nohan</p>
+        <p class="text-md tracking-wide text-gray-600">Mahasiswa Udinus</p>
+        <div class="text-sm mt-2 text-gray-200">
+            <div class="flex flex-row ml-auto space-x-2 items-center">
+                <p class="text-md tracking-wide text-gray-600">rajendranohan4@gmail.com</p>
+                <div class="bg-blue-200 rounded-full h-1 w-1"></div>
+                <p class="text-md tracking-wide text-gray-600">111202113301@mhs.dinus.ac.id</p>
+            </div>
+        </div>
+        <div class="py-5 break-all bbcode">
+            <p class="text-md font-bold uppercase tracking-wide text-gray-600">Deskripsi</p>
+            <p class="text-md tracking-wide text-gray-600">Saya adalah seorang mahasiswa TI di salah satu perguruan tinggu swasta Indonesia. Cita-cita saya ialah membuat produk yang dapat membantu banyak orang di masa depan. Dan untuk mewujudkannya saya telah mengikuti banyak bootcamp dan pelatihan sebagai wawasan saya ketika ingin membangun produk tersebut. Tak hanya bootcamp saya dari sekolah menegah juga memutuskan untuk bersekolah di sekolah kejuruan di bidang TI yang bertujuan sebagai landasan ilmu.</p>
+        </div>
+    </div>
+  </div>
+  <!-- End Content -->
+  <!-- footer -->
+  <footer class="flex flex-wrap items-center p-5 mt-10 border-t-2 border-blue-400">
+      <div class="w-full grid grid-cols-12 gap-5">
+          <div class="col-span-10">
+              <p class="text-md text-gray-800 text-center font-bold">
+              Copyright © 2021 Mahasiswa Matrikulasi
+              </p>
+          </div>
+          <div class="col-span-2">
+              <a href="#top" class="text-xl text-blue-700">
+              Ke atas
+              </p>
+          </div>
+      </div>
+  </footer>
+  <!-- end footer -->
+</body>
+</html>

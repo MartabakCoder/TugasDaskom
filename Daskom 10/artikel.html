@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="relative bg-white mb-10">
+        <!-- Tampilan Web -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6" id="top">
+          <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="index.html">
+                <img class="h-8 w-auto sm:h-10" src="src/img/logo.png" alt="">
+              </a>
+              <span class="p-3 text-xl font-medium text-gray-800">Dinus Student Blog</span>
+            </div>
+            <nav class="hidden md:flex space-x-10">
+              <div class="relative">
+                <a href="index.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Beranda
+                </a>
+                <a href="profil.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Profil
+                </a>
+                <a href="artikel.html" class="p-5 text-base font-medium text-blue-600 hover:text-blue-900">
+                    Artikel
+                </a>
+                <a href="buku_tamu.html" class="p-5 text-base font-medium text-gray-500 hover:text-gray-900">
+                    Buku Tamu
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- End Tampilan Web -->
+
+        <!-- Tampilan Mobile -->
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div class="pt-5 pb-6 px-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <img class="h-8 w-auto" src="src/img/logo.png" alt="Dinus Student Blog">
+                </div>
+              </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+              <div class="grid grid-cols-1 gap-y-4 gap-x-8">
+                <a href="index.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Beranda
+                </a>
+      
+                <a href="profil.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Profil
+                </a>
+      
+                <a href="artikel.html" class="w-full flex px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                  Artikel
+                </a>
+      
+                <a href="buku_tamu.html" class="w-full flex px-4 py-2 border border-transparent rounded-md text-base font-medium text-white text-gray-900 hover:text-gray-700">
+                  Buku Tamu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tampilan Mobile -->
+        <!-- Header Image -->
+        <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(src/img/header.jpg);"></div>
+        <!-- End Header Image -->
+    </div>
+    <!-- End header -->
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="w-full">
+            <h1 class="text-2xl font-bold mb-4">Pengalaman menjadi mahasiswa Udinus semester 1</h1>
+            <p class="text-grey mb-3">Ditulis oleh Rajendra Nohan on 25 May 2020.</p>
+            <p class="text-grey-darkest mb-6 leading-tight">Tak terasa waktu begitu cepat kini saya telah menginjak bangku
+                perkuliahan sebagai mahasiswa di sebuah universitas swasta. Di jenjang
+                S1 ini saya memilih untuk mempelajari tentang perkembangan teknologi
+                perangkat lunak. Tentu bukan hal baru bagi saya terkait rekayasa
+                perangkat lunak karena pada jenjang sekolah menegah saya juga
+                mempelajarinya di RPL.</p>
+            <p class="text-grey-darkest mb-6 leading-tight">Dan saat ini saya telah berkuliah kurang lebih 3 bulan lamanya di
+                sini. Banyak hal baru yang belum saya temui di jenjang sekolah menengah
+                seperti ormawa dll. Hal tersebut membuat saya terpacu untuk lebih
+                menambah pengetahuan, pengalaman serta jaringan saya sehingga dapat
+                terwujud impian saya yaitu membangun sebuah startup yang bermanfaat bagi
+                banyak orang di masa depan.</p>
+            <h2 class="text-xl mb-4">Daftar Mata Kuliah</h2>
+                <ol class="list-decimal">
+                    <li>Kalkulus 1</li>
+                    <li>Dasar Pemrograman</li>
+                    <li>Matematika Diskrit</li>
+                    <li>Pemrograman Berbasis Web</li>
+                    <li>Organisasi dan Arsitektur Komputer</li>
+                    <li>Dasar Komputasi</li>
+                    <li>Pengantar Teknologi Informasi</li>
+                </ol>
+                <!-- Tabel -->
+                <div class="inline-block min-w-full shadow rounded-lg overflow-hidden my-5">
+                    <table class="min-w-full leading-normal">
+                        <thead>
+                            <tr>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    No
+                                </th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Nama Lengkap
+                                </th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Jenis Kelamin
+                                </th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Asal
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-1/12">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">1</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">Alleggra</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Laki-Laki
+                                    </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-2/5">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Solo
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-1/12">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">2</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">Hussein</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Laki-Laki
+                                    </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-2/5">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Pati/ Semarang
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-1/12">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">3</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">Nizar</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Laki-Laki
+                                    </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-2/5">
+                                    <p class="text-gray-900 whitespace-no-wrap text-center">
+                                        Pemalang
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabel End -->
+        </div>
+    </div>
+    <!-- End Content -->
+    <!-- footer -->
+    <footer class="flex flex-wrap items-center p-5 mt-10 border-t-2 border-blue-400">
+        <div class="w-full grid grid-cols-12 gap-5">
+            <div class="col-span-10">
+                <p class="text-md text-gray-800 text-center font-bold">
+                Copyright © 2021 Mahasiswa Matrikulasi
+                </p>
+            </div>
+            <div class="col-span-2">
+                <a href="#top" class="text-xl text-blue-700">
+                Ke atas
+                </p>
+            </div>
+        </div>
+            
+    </footer>
+    <!-- end footer -->
+</body>
+</html>
